@@ -199,6 +199,7 @@ public class AutoService extends AccessibilityService {
             list.get(0).getParent().performAction(AccessibilityNodeInfo.ACTION_CLICK);
         } else {
             Toast.makeText(this, "找不到有效的节点", Toast.LENGTH_SHORT).show();
+            performGlobalAction(AccessibilityService.GLOBAL_ACTION_BACK);
         }
     }
 
